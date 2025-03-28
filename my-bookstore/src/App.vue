@@ -1,18 +1,15 @@
+
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
+import BookList from "./components/BookList.vue";
+import ShoppingCart from "./components/ShoppingCart.vue";
 </script>
 
 <template>
-  <header>
-    <div class="wrapper">
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
-
-  <RouterView />
+  <div>
+    <h1>📚 Book Store 🛒</h1>
+    <BookList />
+    <ShoppingCart />
+  </div>
 </template>
 
 <style scoped>
